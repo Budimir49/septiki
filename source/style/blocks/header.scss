@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+
+  &__logo {
+    margin-left: rem(50px);
+    margin-top: rem(20px);
+
+    @include mobiles() {
+      margin-left: rem(-30px);
+    }
+  }
+
+  &__address {
+    margin-left: rem(70px);
+    margin-top: rem(20px);
+
+    @include mobiles() {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    margin-left: rem(150px);
+    margin-top: rem(20px);
+
+    @include mobiles() {
+      display: none;
+    }
+
+  }
+
+  &__contacts-mobile {
+    right: -30px;
+    top: 20px;
+
+  }
+
+
+}

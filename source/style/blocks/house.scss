@@ -1,0 +1,130 @@
+.house {
+
+  &__img {
+
+
+    @include mobiles() {
+      width: 490px;
+      height: auto;
+    }
+  }
+
+  &__btn-plus {
+    position: absolute;
+    display: block;
+    z-index: 200;
+    cursor: pointer;
+
+    &_position1 {
+      top: 420px;
+      right: 670px;
+
+      @include mobiles() {
+        top: 105px;
+        right: 350px;
+      }
+    }
+
+    &_position2 {
+      top: 530px;
+      right: 850px;
+      z-index: 1000;
+
+      @include mobiles() {
+        top: 185px;
+        right: 320px;
+      }
+    }
+
+    &_position3 {
+      top: 350px;
+      right: 970px;
+
+      @include mobiles() {
+        top: 118px;
+        right: 252px;
+      }
+    }
+  }
+
+  &__btn-img {
+    border-radius: 50%;
+
+
+  }
+
+  &__btn-message-box {
+    @include mobiles() {
+      width: 50px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: -200px;
+    left: -103px;
+    display: none;
+
+  }
+
+  &__desc {
+    margin-left: 5%;
+    width: 90%;
+    top: 19px;
+    position: absolute;
+  }
+
+  &__title{
+    @include arial(bold);
+    font-size: rem(18px);
+    line-height: 24px;
+  }
+
+  &__text {
+    margin-top: rem(5px);
+    @include arial();
+    font-size: rem(15px);
+    line-height: 17px;
+  }
+
+  &__hint {
+    position: absolute;
+    left: -50px;
+    top: 400px;
+    z-index: 200;
+
+    @include mobiles() {
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  }
+
+  &__curve-line {
+    margin-left: rem(60px);
+
+    @include mobiles() {
+      display: none;
+    }
+  }
+
+  &__curve-line-mobile {
+    display: none;
+
+    @include mobiles() {
+      display: block;
+      //position: absolute;
+      order: 2;
+    }
+  }
+
+  &__hint-text {
+    @include arial();
+    font-size: rem(18px);
+    line-height: rem(24px);
+    opacity: 0.35;
+    width: 54%;
+  }
+}

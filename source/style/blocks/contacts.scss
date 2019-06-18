@@ -1,0 +1,38 @@
+.contacts {
+  @include arial();
+  line-height: rem(35px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__opening-hours {
+    font-size: rem(18px);
+    color: $textColorUltraLight;
+
+    @include mobiles() {
+      display: none;
+    }
+  }
+
+  &__tel-main {
+    font-size: rem(25px);
+    @include arial(medium);
+    text-decoration: none;
+    color: $textColor;
+
+    @include mobiles() {
+      position: absolute;
+      width: rem(87px);
+      height: rem(44px);
+      right: -30px;
+    }
+  }
+
+  &__tel-second {
+    font-size: rem(20px);
+
+    @include mobiles() {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.contacts-mobile {
+  display: none;
+
+  @include mobiles() {
+    display: flex;
+    position: absolute;
+    width: 87px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    align-items: center;
+
+  }
+
+  &__link {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+  }
+}

@@ -1,0 +1,15 @@
+.btn {
+  background: radial-gradient(at 50% 0%, #83B0FA, #1F84E6);
+  text-align: center;
+  color: #fff;
+  @include roboto(bold);
+  font-size: rem(25px);
+  text-decoration: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 10px solid #00439e;
+  box-sizing: border-box;
+  padding: 15px 25px;
+}

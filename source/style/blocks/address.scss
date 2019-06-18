@@ -1,0 +1,12 @@
+.address {
+  display: flex;
+  align-items: center;
+  @include arial();
+  font-size: 18px;
+  line-height: 21px;
+
+
+  &__text {
+    margin-left: rem(15px);
+  }
+}

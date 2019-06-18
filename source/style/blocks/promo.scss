@@ -1,0 +1,51 @@
+.promo {
+  border: 3px dashed #2678E1;
+  position: relative;
+  display: flex;
+  color: #83B0FA;
+  border-radius: 10px;
+  opacity: 0.65;
+
+  @include mobiles() {
+
+
+  }
+
+  &__one {
+    width: 33%;
+    padding: rem(30px) 0 rem(30px) rem(40px);
+    opacity: 1;
+
+    @include mobiles() {
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    font-size: rem(50px);
+    line-height: rem(35px);
+    font-weight: 900;
+    opacity: 1;
+    @include roboto(bold);
+
+    @include mobiles() {
+      font-size: 13px;
+      line-height: 9px;
+    }
+  }
+
+  &__text {
+    font-size: rem(30px);
+    line-height: 35px;
+    opacity: 1;
+    @include roboto();
+
+    @include mobiles() {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 8px;
+    }
+  }
+
+
+}
